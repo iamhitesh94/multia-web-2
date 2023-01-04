@@ -1,0 +1,51 @@
+@mixin bold-text {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+@mixin headingText {font-family: "freight-display-pro",serif;;font-style: normal;font-weight: 400;}
+@mixin H1 {@include headingText; line-height: 90%;color: $black;}
+@mixin iMacH1 { @include H1; font-size: $h1-iMac-fs;}
+@mixin desktopH1 { @include H1; font-size: $h1-desktop-fs;}
+@mixin laptopH1 { @include H1; font-size: $h1-laptop-fs;}
+@mixin iPadH1 { @include H1; font-size: $h1-ipad-fs;}
+@mixin mobileH1 { @include H1; font-size: $h1-mobile-fs;}
+
+@mixin H2 {@include headingText; line-height: 90%;color: $black;}
+@mixin iMacH2 { @include H2; font-size: $h2-iMac-fs;}
+@mixin desktopH2 { @include H2; font-size: $h2-desktop-fs;}
+@mixin laptopH2 { @include H2; font-size: $h2-laptop-fs;}
+@mixin iPadH2 { @include H2; font-size: $h2-ipad-fs;}
+@mixin mobileH2 { @include H2; font-size: $h2-mobile-fs;}
+
+@mixin H3 {@include headingText; line-height: 110%;color: $black;}
+@mixin iMacH3 { @include H3; font-size: $h3-iMac-fs;}
+@mixin desktopH3 { @include H3; font-size: $h3-desktop-fs;}
+@mixin laptopH3 { @include H3; font-size: $h3-laptop-fs;}
+@mixin iPadH3 { @include H3; font-size: $h3-ipad-fs;}
+@mixin mobileH3 { @include H3; font-size: $h3-mobile-fs;}
+
+@mixin H4 {@include headingText; line-height: 111%;color: $black;}
+@mixin iMacH4 { @include H4; font-size: $h4-iMac-fs;}
+@mixin desktopH4 { @include H4; font-size: $h4-desktop-fs;}
+@mixin laptopH4 { @include H4; font-size: $h4-laptop-fs;}
+@mixin iPadH4 { @include H4; font-size: $h4-ipad-fs;}
+@mixin mobileH4 { @include H4; font-size: $h4-mobile-fs;}
+
+@mixin H5 {@include headingText; line-height: 90%;color: $black;}
+@mixin iMacH5 { @include H5; font-size: $h5-iMac-fs;}
+@mixin desktopH5 { @include H5; font-size: $h5-desktop-fs;}
+@mixin laptopH5 { @include H5; font-size: $h5-laptop-fs;}
+@mixin iPadH5 { @include H5; font-size: $h5-ipad-fs;}
+@mixin mobileH5 { @include H5; font-size: $h5-mobile-fs;}
+
+@mixin H6 {@include headingText; line-height: 90%;color: $black;}
+@mixin iMacH6 { @include H6; font-size: $h6-iMac-fs;}
+@mixin desktopH6 { @include H6; font-size: $h6-desktop-fs;}
+@mixin laptopH6 { @include H6; font-size: $h6-laptop-fs;}
+@mixin iPadH6 { @include H6; font-size: $h6-ipad-fs;}
+@mixin mobileH6 { @include H6; font-size: $h6-mobile-fs;}
+
+@mixin defaultText {   font-family: 'TT Norms Pro';     font-style: normal;font-weight: 400;color: $white;}
+@mixin bodyText1 {@include defaultText; font-size: 24px;line-height: 130%;}
+@mixin bodyText2 { @include defaultText;font-size: 20px;line-height: 140%;}
