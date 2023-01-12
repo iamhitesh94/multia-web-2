@@ -33,6 +33,10 @@
 				</div>
 			</div>
 		</div> 
+		<div class="work-toggle-switch">
+            <NuxtLink v-if="gridLink.url" class="switch-btn" :to="gridLink.url">{{gridLink.title}}</NuxtLink>
+            <NuxtLink v-if="showcaseLink.url" class="switch-btn" :to="showcaseLink.url">{{showcaseLink.title}}</NuxtLink>
+        </div>
    	</div>
 </template>
 
@@ -51,7 +55,19 @@ export default {
 			default(){
 				return ''
 			}
-		}
+		},
+		gridLink:{
+            type:Object,
+            default(){
+                return {}
+            }
+        },
+        showcaseLink:{
+            type:Object,
+            default(){
+                return {}
+            }
+        }
 	} 
 }
 </script>

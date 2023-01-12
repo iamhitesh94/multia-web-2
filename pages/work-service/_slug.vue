@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<TypeofWorkListing v-if="service" :service="service" type="Work" data-scroll />
+		<TypeofWorkListing v-if="service" :service="service" type="Work" :grid-link="themesettings.workPagesSecGridLink" :showcase-link="themesettings.workPagesSecShowcaseLink"  data-scroll />
 		<GlobalCustomjs data-scroll />
 	</div>
 </template>
@@ -28,6 +28,9 @@ export default {
 		};
     },
 	computed: {
+		themesettings (){
+            return this.$store.state.themesettings.themeSettings
+        },
 		service(){
 			return this.$store.state.page.projectByServices;
 		}

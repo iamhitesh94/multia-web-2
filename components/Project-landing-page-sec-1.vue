@@ -9,7 +9,6 @@
 				</ul>
 			</div>
 			<div class="project-listing-block">
-				
 				<div class="project-listing">
 					<div class="row">
 						<div v-for="(project, inx) in projects" :key="inx" class="col-md-6 coman-effect-inview">
@@ -33,7 +32,11 @@
 					</div>
 				</div>
 			</div>
-		</div> 
+		</div>
+		<div class="work-toggle-switch">
+            <NuxtLink v-if="gridLink.url" class="switch-btn" :to="gridLink.url">{{gridLink.title}}</NuxtLink>
+            <NuxtLink v-if="showcaseLink.url" class="switch-btn" :to="showcaseLink.url">{{showcaseLink.title}}</NuxtLink>
+        </div>
    	</div>
 </template>
 
@@ -47,7 +50,19 @@ export default {
 			default(){
 				return {}
 			}
-		}
+		},
+		gridLink:{
+            type:Object,
+            default(){
+                return {}
+            }
+        },
+        showcaseLink:{
+            type:Object,
+            default(){
+                return {}
+            }
+        }
 	},
 	data() {
 		return {

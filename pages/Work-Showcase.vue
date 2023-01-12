@@ -1,7 +1,7 @@
 <template>
     <div id="js-scroll" data-scroll-container>
         <Header :themesettings="themesettings" :menus="menus" data-scroll />
-        <WorkShowcasePage v-if="projects" :projects="projects" data-scroll />
+        <WorkShowcasePage v-if="projects" :projects="projects" :grid-link="themesettings.workPagesSecGridLink" :showcase-link="themesettings.workPagesSecShowcaseLink" data-scroll />
         <GlobalCustomjs data-scroll />
     </div>
 </template>

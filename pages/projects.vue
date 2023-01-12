@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<ProjectLandingPageSec v-if="projects || pageInfo" :lm-s="lmS" data-scroll />
+		<ProjectLandingPageSec v-if="projects || pageInfo" :lm-s="lmS" :grid-link="themesettings.workPagesSecGridLink" :showcase-link="themesettings.workPagesSecShowcaseLink" data-scroll />
 		<GlobalCustomjs data-scroll />
 	</div>
 </template>
@@ -33,6 +33,11 @@ export default {
 			lmS: null
 		};
 	},
+	computed:{
+        themesettings (){
+            return this.$store.state.themesettings.themeSettings
+        },
+    },
 	mounted() {
 		this.lmS = new this.LocomotiveScroll({
 			el: document.querySelector("#js-scroll"),

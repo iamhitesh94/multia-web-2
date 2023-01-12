@@ -91,6 +91,14 @@ query ThemeSettings {
           title
         }
       }
+      workPagesSecGridLink{
+        title
+        url
+      }
+      workPagesSecShowcaseLink{
+        title
+        url
+      }
     }
   }
 }
