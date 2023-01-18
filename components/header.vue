@@ -3,7 +3,7 @@
 		<header class="header">
 			<div class="container">
 				<div class="header-top flxrow">
-					<div class="logo"><NuxtLink to="/"><img v-bind:src="themesettings.mainLogo.sourceUrl" alt=""></NuxtLink></div>
+					<div v-if="themesettings.mainLogo.sourceUrl" class="logo"><NuxtLink to="/"><img v-bind:src="themesettings.mainLogo.sourceUrl" alt=""></NuxtLink></div>
 					<div class="header-right">
 						<div class="main-nav"> 
 							<!-- eslint-disable vue/no-use-v-if-with-v-for,vue/no-confusing-v-for-v-if -->
@@ -107,7 +107,7 @@
 						</div>
 						<div class="back-image-main">
 							<div class="back-imgaes-list">
-								<div class="back-img-new imagebox_big"> <img v-bind:src="themesettings.toggleMenuBgImage.sourceUrl" alt=""></div>
+								<div v-if="themesettings.toggleMenuBgImage.sourceUrl" class="back-img-new imagebox_big"> <img v-bind:src="themesettings.toggleMenuBgImage.sourceUrl" alt=""></div>
 							</div>
 						</div>
 						<div class="menurotete-text">
@@ -118,7 +118,7 @@
 						<div class="fornt-image-main">
 							<div class="fornt-imgaes-list">
 								<div class="fornt-img imagebox">
-									<div class="in_image">
+									<div v-if="themesettings.toggleMenuImage.sourceUrl" class="in_image">
 										<img v-bind:src="themesettings.toggleMenuImage.sourceUrl" alt="">
 									</div>
 								</div>

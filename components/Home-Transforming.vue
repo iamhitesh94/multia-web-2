@@ -31,7 +31,7 @@ export default {
 	methods:{
 		combine_html(text, hasIcon, icon){
 			const arrowIcon = '<div class="hide-row"><i><img src="/assets/img/Arrow-line.svg" alt=""></i> <i><img src="/assets/img/Arrow-line.svg" alt=""></i> <i><img src="/assets/img/Arrow-line.svg" alt=""></i></div>';
-			let newHtml = text.replace("%s", arrowIcon);
+			let newHtml = text.replace(/%s/g, arrowIcon);
 			if(hasIcon && icon != null){
 				newHtml = newHtml.replace("#icon#", "<img src='"+icon.sourceUrl+"'>");
 			}

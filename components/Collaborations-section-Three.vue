@@ -55,21 +55,9 @@
 								<div class="input-row">
 									<div class="input-title-2">How can we help you?</div>
 									<div class="redio-input-box">
-										<div class="radio-box">
-											<input id="one" type="radio" name="select-help" value="Projects">
-											<label for="one">Projects</label>
-										</div>
-										<div class="radio-box">
-											<input id="one-1" type="radio" name="select-help" value="Careers">
-											<label for="one-1">Careers</label>
-										</div>
-										<div class="radio-box">
-											<input id="one-2" type="radio" name="select-help" value="Partnerships">
-											<label for="one-2">Partnerships</label>
-										</div>
-										<div class="radio-box">
-											<input id="one-4" type="radio" name="select-help" value="Chat with us">
-											<label for="one-4">Chat with us</label>
+										<div v-for="(option, inx) in formHelpOptions" :key="inx" class="radio-box">
+											<input :id="`checkbox-${inx}`" type="radio" name="select-help" :value="option.option">
+											<label :for="`checkbox-${inx}`">{{option.option}}</label>
 										</div>
 									</div>
 								</div>
@@ -131,6 +119,12 @@ export default {
 			type: String,
 			default() {
 				return ''
+			}
+		},
+		formHelpOptions:{
+			type: Array,
+			default() {
+				return []
 			}
 		}
 	},

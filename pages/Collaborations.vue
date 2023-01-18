@@ -4,8 +4,8 @@
       :lines="collaborationsPage.bannerSecTitleLines" data-scroll />
     <CollaborationsSectionTwo v-if="collaborationsPage.collaborations"
       :collaborations="collaborationsPage.collaborations" data-scroll />
-    <CollaborationsSectionThree v-if="collaborationsPage.formSecShortcode || collaborationsPage.formSecTitle"
-      :form-title="collaborationsPage.formSecTitle" :form-shotcode="collaborationsPage.formSecShortcode" data-scroll />
+    <CollaborationsSectionThree v-if="collaborationsPage.formSecShortcode || collaborationsPage.formSecTitle || collaborationsPage.formHelpOptions"
+      :form-title="collaborationsPage.formSecTitle" :form-shotcode="collaborationsPage.formSecShortcode" :form-help-options="collaborationsPage.formHelpOptions" data-scroll />
     <GlobalCustomjs data-scroll />
   </div>
 </template>

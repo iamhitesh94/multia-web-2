@@ -505,6 +505,9 @@ const collaborationsPageQuery = gql`query GetContentNode($id: ID!) {
           }
           formSecTitle
           formSecShortcode
+          formHelpOptions{
+            option
+          }
         }
       }
     }

@@ -72,10 +72,10 @@ export default {
   head: {
     
     script: [
-      { src: '/assets/js/jquery-3.6.0.min.js', type: 'text/javascript', body: true, defer: true },
-      { src: '/assets/js/swiper-bundle.min.js', type: 'text/javascript', body: true, defer: true },
+      { src: 'http://139.162.44.23:1234/assets/js/jquery-3.6.0.min.js', type: 'text/javascript', body: true, defer: true },
+      { src: 'http://139.162.44.23:1234/assets/js/swiper-bundle.min.js', type: 'text/javascript', body: true, defer: true },
       // { src: './assets/js/custom-script.js', type: 'text/javascript', body: true, defer: true },
-      { src: '/assets/js/jquery.nice-select.min.js', type: 'text/javascript', body: true, defer: true },
+      { src: 'http://139.162.44.23:1234/assets/js/jquery.nice-select.min.js', type: 'text/javascript', body: true, defer: true },
     ],   
     
   },
